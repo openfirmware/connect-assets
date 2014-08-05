@@ -8,4 +8,10 @@ describe("instance", function () {
 
     expect(assets.environment).to.be.an("object");
   });
+
+  it("exposes the mincer object", function () {
+    var assets = connectAssets();
+
+    expect(assets.mincer).to.be.an("object");
+  });
 });
